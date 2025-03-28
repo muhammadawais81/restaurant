@@ -10,7 +10,7 @@ import Reservation from './component/Reservation'
 
 function page() {
   return (
-    <div className='bg-white'>
+    <div className='bg-white text-black'>
       <Hero/>
       <Services/>
       <About/>
