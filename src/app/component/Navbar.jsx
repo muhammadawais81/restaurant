@@ -21,7 +21,7 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className={`fixed top-0 z-50 w-full text-white p-3 px-6 md:px-16 shadow-md transition-all duration-300 ${scroll ? "bg-black bg-opacity-90" : "bg-transparent"}`}>
+    <nav className={`fixed top-0 z-50 w-full text-white p-3 px-6 md:px-16 shadow-md transition-all duration-300 ${scroll ? "bg-black bg-opacity-90" : "bg-black"}`}>
       <div className="flex justify-between items-center">
         {/* Logo */}
         <h1 className="text-amber-500 text-3xl font-bold tracking-wide"><FontAwesomeIcon icon={faUtensils} className="text-amber-500 text-3xl" /> Restaurant</h1>
@@ -36,7 +36,7 @@ function Navbar() {
           <Link href={"#"} className="hover:text-amber-400 transition">Pages</Link>
 
           {/* Book Table Button */}
-          <Link href={"#"}>
+          <Link href={"/table"}>
             <button className="text-white font-bold px-6 py-2 rounded-md bg-amber-500 hover:bg-amber-600 transition">
               Book Table
             </button>

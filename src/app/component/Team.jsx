@@ -1,10 +1,10 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
-import { Lobster, Lora } from "next/font/google";
 import Image from "next/image";
 import team1 from "@/app/assets/img/team-1.jpg";
 import team3 from "@/app/assets/img/team-3.jpg";
 
+import { Lobster, Lora } from "next/font/google";
 const lobster = Lobster({ subsets: ["latin"], weight: "400" });
 const lora = Lora({ subsets: ["latin"], weight: "700" });
 
