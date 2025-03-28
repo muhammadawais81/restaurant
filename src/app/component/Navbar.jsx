@@ -52,15 +52,15 @@ function Navbar() {
       {/* Mobile Menu */}
       <div className={`md:hidden absolute top-full left-0 w-full bg-black bg-opacity-90 transition-all duration-300 overflow-hidden ${isOpen ? "max-h-[500px] opacity-100 py-4" : "max-h-0 opacity-0 py-0"}`}>
         <div className="flex flex-col items-center gap-4">
-          <Link href={"#"} className="hover:text-amber-400 transition" onClick={() => setIsOpen(false)}>Home</Link>
-          <Link href={"#"} className="hover:text-amber-400 transition" onClick={() => setIsOpen(false)}>Menu</Link>
-          <Link href={"#"} className="hover:text-amber-400 transition" onClick={() => setIsOpen(false)}>About</Link>
-          <Link href={"#"} className="hover:text-amber-400 transition" onClick={() => setIsOpen(false)}>Services</Link>
-          <Link href={"#"} className="hover:text-amber-400 transition" onClick={() => setIsOpen(false)}>Contact</Link>
-          <Link href={"#"} className="hover:text-amber-400 transition" onClick={() => setIsOpen(false)}>Pages</Link>
+        <Link href={"/"} className="hover:text-amber-400 transition">Home</Link>
+          <Link href={"/menu"} className="hover:text-amber-400 transition">Menu</Link>
+          <Link href={"/about"} className="hover:text-amber-400 transition">About</Link>
+          <Link href={"/services"} className="hover:text-amber-400 transition">Services</Link>
+          <Link href={"#"} className="hover:text-amber-400 transition">Contact</Link>
+          <Link href={"#"} className="hover:text-amber-400 transition">Pages</Link>
 
           {/* Mobile Book Table Button */}
-          <Link href={"#"} onClick={() => setIsOpen(false)}>
+          <Link href={"/table"} onClick={() => setIsOpen(false)}>
             <button className="text-white font-bold px-6 py-2 rounded-md bg-amber-500 hover:bg-amber-600 transition">
               Book Table
             </button>
